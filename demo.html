@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Configuración básica del documento -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Detalle del Plan - ColecClub</title>
+
+        <!-- Tipografías -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+        <link href="https://api.fontshare.com/v2/css?f[]=satoshi@100,300,400,500,600,700,900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+
+        <!-- Estilos personalizados -->
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="media/logo.svg" alt="MiWeb logo" style="height: auto; max-height: 20px;" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#queIncluye">Que incluye</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                         <li class="nav-item"><a class="nav-link" href="#testi">Testimonios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#preguntas">Preguntas frecuentes</a></li>
+                        <a href="demo.html" class="btn btn-dark" style="margin-left: 2rem;">Elegir plan</a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- /NAVBAR -->
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main>
+            <section id="inicio2" class="hero-tryhard hero-background-tryhard d-flex align-items-center">
+                <div class="container">
+                    <div class="row align-items-center gy-5">
+                        <!-- Columna texto -->
+                        <div class="col-lg-6 text-white text-center text-lg-start">
+                            <p class="fs-5 fw-semibold text-white mb-2">$65.000</p>
+                            <h1 class="display-4 fw-bold mb-2" style="color: white;">
+                                Plan Modo Tryhard<br />
+                                <span class="text-highlight">Para reales fanáticos</span>
+                            </h1>
+                            <p class="lead-custom">Diseñado para los locos de la <strong>colección</strong> y de las <strong>sorpresas</strong>.</p>
+                            <a href="#" class="btn btn-warning btn-lg mt-4 px-5 rounded-pill">Elegir plan</a>
+                        </div>
+
+                        <!-- Columna imagen 
+      <div class="col-lg-6 text-center">
+        <img src="media/c0c35cd7-06b3-4b2e-bc18-2f9e3080d2f7.png" alt="Caja Tryhard" class="img-fluid hero-img" />
+      </div>-->
+                    </div>
+                </div>
+            </section>
+
+            <section id="queIncluye" class="section-spacing container text-center py-5">
+                <div class="miniespaciado">
+                    <h2 class="h2-custom mb-5 fw-bold">¿Qué incluye?</h2>
+                </div>
+
+                                        <!-- Ítems del plan -->
+                        <div id="galeria" class="row row-cols-1 row-cols-md-3 g-5 mb-5">
+                          <div class="col">
+                            <img src="media/comic.png" alt="Comic" width="80" class="mb-3" />
+                            <h5 class="fw-bold">Comics Variantes</h5>
+                            <p>Dos ediciones exclusivas con portada variante numerada. Ideal para fanáticos y coleccionistas.</p>
+                          </div>
+                          <div class="col">
+                            <img src="media/nft.png" alt="NFT" width="80" class="mb-3" />
+                            <h5 class="fw-bold">NFT Coleccionable</h5>
+                            <p>Incluye un NFT <strong>UltraRare</strong> oficial único, con arte exclusivo y certificado digital de autenticidad.</p>
+                          </div>
+                          <div class="col">
+                            <img src="media/merch.png" alt="Merch" width="80" class="mb-3" />
+                            <h5 class="fw-bold">Merch Oficial</h5>
+                            <p>Pines, stickers y póster oficial. Todo 100% licenciado y creado para esta edición.</p>
+                          </div>
+                          <div class="col">
+                            <img src="media/autografiado.png" alt="Firmado" width="80" class="mb-3" />
+                            <h5 class="fw-bold">Producto Firmado</h5>
+                            <p>35% de chance de recibir un ítem autografiado por artistas o actores originales del universo.</p>
+                          </div>
+                          <div class="col">
+                            <img src="media/remera.png" alt="Remera" width="80" class="mb-3" />
+                            <h5 class="fw-bold">Remera Premium</h5>
+                            <p>Remera oficial Marvel (a elección). Tela suave, estampado de calidad y diseño exclusivo.</p>
+                          </div>
+                          <div class="col">
+                            <img src="media/stickers.png" alt="Stickers" width="80" class="mb-3" />
+                            <h5 class="fw-bold">Stickers + Pines</h5>
+                            <p>15 stickers y 10 pines temáticos. Coleccionables, duraderos y diseñados para fans verdaderos.</p>
+                          </div>
+                        </div>
+
+                        <!-- Galería de ediciones Tryhard -->
+                        <div class="bg-gradient p-5 rounded-4" style="background: linear-gradient(90deg, #ff69b4, #7f00ff);">
+                          <div class="row row-cols-1 row-cols-md-5 g-4">
+                            <div class="col">
+                              <div class="card border-0 shadow-sm h-100">
+                                <img src="media/tryhard-mayo2020.png" class="card-img-top rounded-4" alt="Mayo 2020" />
+                                <div class="card-body text-center">
+                                  <h6 class="mb-1 fw-bold">Edición Mayo 2020</h6>
+                                  <p class="small text-muted">La colección de un TryHard</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card border-0 shadow-sm h-100">
+                                <img src="media/tryhard-sept2021.png" class="card-img-top rounded-4" alt="Sept 2021" />
+                                <div class="card-body text-center">
+                                  <h6 class="mb-1 fw-bold">Edición Septiembre 2021</h6>
+                                  <p class="small text-muted">La colección de un TryHard</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card border-0 shadow-sm h-100">
+                                <img src="media/tryhard-mayo2024.png" class="card-img-top rounded-4" alt="Mayo 2024" />
+                                <div class="card-body text-center">
+                                  <h6 class="mb-1 fw-bold">Edición Mayo 2024</h6>
+                                  <p class="small text-muted">La colección de un TryHard</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card border-0 shadow-sm h-100">
+                                <img src="media/tryhard-julio2022.png" class="card-img-top rounded-4" alt="Julio 2022" />
+                                <div class="card-body text-center">
+                                  <h6 class="mb-1 fw-bold">Edición Julio 2022</h6>
+                                  <p class="small text-muted">La colección de un TryHard</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card border-0 shadow-sm h-100">
+                                <img src="media/tryhard-mayo2025.png" class="card-img-top rounded-4" alt="Mayo 2025" />
+                                <div class="card-body text-center">
+                                  <h6 class="mb-1 fw-bold">Edición Mayo 2025</h6>
+                                  <p class="small text-muted">La colección de un TryHard</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+
+            </section>
+
+                        <section id="testi" class="testimonios-section text-white">
+              <div class="container">
+                <div class="text-center mb-5">
+                  <h2 class="h2-customBlanco3">Lo que dicen los Tryhard</h2>
+                  <p class="lead-custom text-light">Experiencias reales de quienes ya viven el modo Tryhard</p>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <div class="col">
+                    <div class="card testimonial-card h-100">
+                      <div class="card-body">
+                        <p class="card-text">“Abrir la caja fue una locura. Me tocó un cómic firmado y un NFT que ya vale más de lo que pagué.”</p>
+                        <img src="media/1.png" alt="" style="width: 50px;">
+                        <h5 class="card-title mt-4 mb-0">Lucas M.</h5>
+                        
+                        <small class="text-muted">Buenos Aires</small>
+                           <div class="mt-3 text-warning small fw-semibold review-label">
+  ★★★★★ By Google Maps
+</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card testimonial-card h-100">
+                      <div class="card-body">
+                        <p class="card-text">“La remera premium me quedó pintada, y los pines son una joya. ¡Lo espero cada mes como Navidad!”</p>
+                        <img src="media/2.png" alt="" style="width: 50px;">
+                        <h5 class="card-title mt-4 mb-0">Sofía R.</h5>
+                        <small class="text-muted">Córdoba</small>
+                           <div class="mt-3 text-warning small fw-semibold review-label">
+  ★★★★★ By Google Maps
+</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card testimonial-card h-100">
+                      <div class="card-body">
+                        <p class="card-text">“El Plan Tryhard es la definición de hype. Cada caja es única. Si sos fan, no podés no tenerlo.”</p>
+                        <img src="media/3.png" alt="" style="width: 50px;">
+                        <h5 class="card-title mt-4 mb-0">Tomás D.</h5>
+                        <small class="text-muted">Rosario</small>
+                          <div class="mt-3 text-warning small fw-semibold review-label">
+   ★★★★★ By Google Maps
+</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+
+
+            <!-- FAQ / Preguntas frecuentes -->
+                  <section id="preguntas" class="faq-section section-spacing container">
+                    <div class="text-center mb-5">
+                      <h2 class="h2-custom fw-bold">Preguntas frecuentes</h2>
+                      <p class="lead-custom">Todo lo que necesitás saber sobre el Plan Modo Tryhard</p>
+                    </div>
+
+                    <div class="accordion" id="faqAccordion">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq1">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#answer1" aria-expanded="true" aria-controls="answer1">
+                            ¿Qué incluye exactamente el Plan Tryhard?
+                          </button>
+                        </h2>
+                        <div id="answer1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                          <div class="accordion-body">
+                            Incluye cómics con portadas variantes, remeras premium, NFTs oficiales, producto firmado, merch exclusivo y sets de stickers + pines.
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq2">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer2" aria-expanded="false" aria-controls="answer2">
+                            ¿Es posible elegir los productos que recibo?
+                          </button>
+                        </h2>
+                        <div id="answer2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                          <div class="accordion-body">
+                            No, el plan está pensado como una experiencia sorpresa. Cada caja está curada para maximizar el factor coleccionable y la emoción.
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq3">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer3" aria-expanded="false" aria-controls="answer3">
+                            ¿Qué posibilidades tengo de recibir un producto autografiado?
+                          </button>
+                        </h2>
+                        <div id="answer3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                          <div class="accordion-body">
+                            El 35% de las cajas Tryhard incluyen al menos un ítem autografiado por artistas, dibujantes o actores relacionados al universo pop.
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq4">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer4" aria-expanded="false" aria-controls="answer4">
+                            ¿Puedo regalar este plan a otra persona?
+                          </button>
+                        </h2>
+                        <div id="answer4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
+                          <div class="accordion-body">
+                            Sí. Al suscribirte podés dejar los datos del destinatario. Además, la caja se entrega con diseño personalizado y sin precios visibles.
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq5">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer5" aria-expanded="false" aria-controls="answer5">
+                            ¿Cada caja contiene siempre los mismos ítems?
+                          </button>
+                        </h2>
+                        <div id="answer5" class="accordion-collapse collapse" aria-labelledby="faq5" data-bs-parent="#faqAccordion">
+                          <div class="accordion-body">
+                            No. Los ítems se renuevan cada mes, con ediciones limitadas y objetos distintos en cada entrega. Eso mantiene viva la sorpresa.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+        </main>
+
+        <!-- FOOTER -->
+        <section class="footer-section p-0">
+            <footer class="container py-5">
+                <div class="row row-cols-2 row-cols-md-4 g-4 mb-4">
+                    <div>
+                        <h6 class="fw-bold text-black">Inicio</h6>
+                        <ul class="list-unstyled footer-list">
+                            <li><a href="#">Qué recibís</a></li>
+                            <li><a href="#">Comparador</a></li>
+                            <li><a href="#">NFT</a></li>
+                            <li><a href="#">Nosotros</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6 class="fw-bold text-black">Detalle</h6>
+                        <ul class="list-unstyled footer-list">
+                            <li><a href="#">¿Qué es un NFT?</a></li>
+                            <li><a href="#">Nuestros planes</a></li>
+                            <li><a href="#">Traducir</a></li>
+                            <li><a href="#">ColecClub</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6 class="fw-bold text-black">Contacto</h6>
+                        <ul class="list-unstyled footer-list">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Youtube</a></li>
+                            <li><a href="#">Linkedin</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6 class="fw-bold text-black">Mi cuenta</h6>
+                        <ul class="list-unstyled footer-list">
+                            <li><a href="#">Mis cajas</a></li>
+                            <li><a href="#">Devoluciones</a></li>
+                            <li><a href="#">Contacto</a></li>
+                            <li><a href="#">GeekSwap</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small gap-3">
+                    <div class="d-flex flex-wrap gap-3 text-muted">
+                        <a href="#">Términos</a>
+                        <a href="#">Privacidad</a>
+                        <a href="#">Cookies</a>
+                        <a href="#">Legal</a>
+                        <a href="#">Contacto</a>
+                    </div>
+                    <div class="text-muted text-center">© 2025 Copyright By Ezequiel Beider</div>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="footer-social"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="footer-social"><i class="bi bi-tiktok"></i></a>
+                        <a href="#" class="footer-social"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="footer-social"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="footer-social"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </section>
+        <!-- /FOOTER -->
+
+        <!-- Bootstrap Bundle -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Script navbar scroll -->
+        <script>
+            window.addEventListener("scroll", function () {
+                const navbar = document.querySelector(".navbar");
+                navbar.classList.toggle("scrolled", window.scrollY > 50);
+            });
+        </script>
+    </body>
+</html>
