@@ -26,7 +26,9 @@ body {
 }
 
 .navbar.scrolled {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8); /* fondo blanco semitransparente */
+    backdrop-filter: blur(10px); /* aplica el desenfoque */
+    -webkit-backdrop-filter: blur(10px); /* soporte para Safari */
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
 }
 
