@@ -10,6 +10,7 @@
 
 /* 2. ESTILOS GENERALES */
 body {
+    overflow-x: hidden;
     font-family: var(--font-family-base);
     color: #212529;
     background-color: #ffffff;
@@ -88,6 +89,24 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
+}
+@media (max-width:576px)
+{
+    .hero-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw; /* 100% del viewport */
+    height: 100%;
+    background-image: url("media/fondo.jpg");
+    background-size: cover;
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
 }
 .row.p-5 {
     min-height: 90vh;
