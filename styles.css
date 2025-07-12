@@ -425,6 +425,14 @@ img.rounded-circle {
         max-width: 1500px;
     }
 }
+@media (max-width: 1650px) and (min-width: 1401px) {
+    .container {
+        max-width: 100%;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        box-sizing: border-box;
+    }
+}
 
 @media (max-width: 768px) {
     h1 {
