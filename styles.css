@@ -57,8 +57,8 @@ body {
 .navbar.scrolled .nav-link:hover {
     color: var(--primary-color); /* o el que quieras al hacer hover */
 }
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show
- {
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
     color: var(--primary-color);
 }
 
@@ -71,7 +71,7 @@ body {
     z-index: 1;
 }
 
-.miniespaciado{
+.miniespaciado {
     padding-top: 2rem;
 }
 
@@ -90,23 +90,21 @@ body {
     background-repeat: no-repeat;
     z-index: -1;
 }
-@media (max-width:576px)
-{
+@media (max-width: 576px) {
     .hero-background::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100vw; /* 100% del viewport */
-    height: 100%;
-    background-image: url("media/fondo.jpg");
-    background-size: cover;
-    background-position: 50% 20%;
-    background-repeat: no-repeat;
-    z-index: -1;
-}
-
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw; /* 100% del viewport */
+        height: 100%;
+        background-image: url("media/fondo.jpg");
+        background-size: cover;
+        background-position: 50% 20%;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
 }
 .row.p-5 {
     min-height: 90vh;
@@ -152,11 +150,11 @@ p {
     border: none;
 }
 .gradient-text {
-  background: var(--primary-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent; /* para navegadores que no soportan text-fill-color */
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent; /* para navegadores que no soportan text-fill-color */
 }
 
 .btn-dark:hover {
@@ -280,9 +278,9 @@ section h2::after {
 .card-text {
     color: #6c757d;
 }
-.idColor{
-    background-color: #F8F9FF;
-     border: 2px solid #9bcdff;
+.idColor {
+    background-color: #f8f9ff;
+    border: 2px solid #9bcdff;
 }
 
 /* 7. TESTIMONIOS */
@@ -339,7 +337,7 @@ img.rounded-circle {
 /* TITULOS */
 .h1-custom {
     font-family: "Orbitron";
-    font-size:3.74rem;
+    font-size: 3.74rem;
     font-weight: 900;
     line-height: 1;
     color: var(--dark-color);
@@ -1020,206 +1018,204 @@ img.rounded-circle {
     }
 }
 .footer-section {
-  background-color: #fff;
-  font-size: 0.95rem;
-  border-top: 1px solid #eee;
+    background-color: #fff;
+    font-size: 0.95rem;
+    border-top: 1px solid #eee;
 }
 
 .footer-section a {
-  color: #212529;
-  text-decoration: none;
-  transition: color 0.3s;
+    color: #212529;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 .footer-section a:hover {
-  color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .footer-list li {
-  margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .footer-social {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border: 1px solid #ddd;
-  border-radius: 50%;
-  font-size: 1rem;
-  color: #212529;
-  transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    font-size: 1rem;
+    color: #212529;
+    transition: all 0.3s;
 }
 .footer-social:hover {
-  background-color: var(--primary-color);
-  color: white;
-  border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
 }
 
 .hero-tryhard {
-  min-height: 100vh;
-  padding: 100px 0;
-  background-image: url("media/lastfondo2.jpg");
-  background-size: cover;
-  background-position: right;
-  background-repeat: no-repeat;
-  color: white;
-  position: relative;
-  z-index: 1;
+    min-height: 100vh;
+    padding: 100px 0;
+    background-image: url("media/lastfondo2.jpg");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+    z-index: 1;
 }
 
 .hero-tryhard h1 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 3rem;
-  font-weight: 800;
-  line-height: 1.2;
+    font-family: "Orbitron", sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
 }
 
 .hero-tryhard .text-highlight {
-  color: #ffe066;
+    color: #ffe066;
 }
 
 .hero-tryhard .lead-custom {
-  font-size: 1.1rem;
-  color: #e2e2e2;
+    font-size: 1.1rem;
+    color: #e2e2e2;
 }
 
 .hero-tryhard .btn-warning {
-  background-color: #facc15;
-  border: none;
-  color: black;
-  font-weight: 600;
+    background-color: #facc15;
+    border: none;
+    color: black;
+    font-weight: 600;
 }
 
 .hero-tryhard .btn-warning:hover {
-  background-color: #eab308;
-  color: black;
+    background-color: #eab308;
+    color: black;
 }
 
 .hero-tryhard .hero-img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
-  .hero-tryhard h1 {
-    
-    font-size: 2.2rem;
-  }
+    .hero-tryhard h1 {
+        font-size: 2.2rem;
+    }
 
-  .hero-tryhard {
-    background-position: left;
-    padding: 60px 20px;
-    text-align: center;
-  }
+    .hero-tryhard {
+        background-position: left;
+        padding: 60px 20px;
+        text-align: center;
+    }
 
-  .hero-tryhard .btn {
-    width: 100%;
-  }
+    .hero-tryhard .btn {
+        width: 100%;
+    }
 }
 
 .hero-background-tryhard {
-  position: relative;
-  z-index: 1;
-  padding-top: 100px; /* Esto compensa el header fijo */
-  min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    padding-top: 100px; /* Esto compensa el header fijo */
+    min-height: 100vh;
 }
 
 /* Fondo que se mete por detrás del header */
 .hero-background-tryhard::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100vw;
-  height: 100%;
-  background-image: url("media/fondo2.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background-image: url("media/fondo2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
 
 .faq-section {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
 
 .accordion-button {
-  font-weight: 600;
-  font-size: 1.1rem;
-  background-color: #f8f9fa;
-  color: var(--dark-color);
-  border-radius: 8px;
-  transition: all 0.3s;
+    font-weight: 600;
+    font-size: 1.1rem;
+    background-color: #f8f9fa;
+    color: var(--dark-color);
+    border-radius: 8px;
+    transition: all 0.3s;
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: #e8f0ff;
-  color: var(--primary-color);
-  box-shadow: none;
+    background-color: #e8f0ff;
+    color: var(--primary-color);
+    box-shadow: none;
 }
 
 .accordion-item {
-  border: none;
-  border-radius: 12px;
-  margin-bottom: 1rem;
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.06);
+    border: none;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.06);
 }
 
 .accordion-body {
-  background: white;
-  border-radius: 0 0 12px 12px;
-  padding: 1.25rem 1.5rem;
-  font-size: 0.95rem;
-  color: var(--secondary-color);
+    background: white;
+    border-radius: 0 0 12px 12px;
+    padding: 1.25rem 1.5rem;
+    font-size: 0.95rem;
+    color: var(--secondary-color);
 }
 
 @media (max-width: 576px) {
-  .accordion-button {
-    font-size: 1rem;
-  }
+    .accordion-button {
+        font-size: 1rem;
+    }
 }
 
-
 .testimonios-section {
-  background: linear-gradient(135deg, #0076c5, #ff69b4);
-  padding: 100px 0;
-  border-radius: 4rem 4rem 0 0;
+    background: linear-gradient(135deg, #0076c5, #ff69b4);
+    padding: 100px 0;
+    border-radius: 4rem 4rem 0 0;
 }
 
 .testimonial-card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(8px);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 1.5rem;
-  padding: 2rem;
-  color: white;
-  transition: transform 0.3s;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    color: white;
+    transition: transform 0.3s;
 }
 
 .testimonial-card:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 .testimonial-card .card-text {
-  font-style: italic;
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #f1f1f1;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #f1f1f1;
 }
 
 .testimonial-card .card-title {
-  font-weight: 600;
-  font-size: 1.1rem;
-  color: #ffe066;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #ffe066;
 }
 
 .testimonial-card small {
-  font-size: 0.9rem;
-  color: #e2e2e2;
+    font-size: 0.9rem;
+    color: #e2e2e2;
 }
 
 .h2-customBlanco3 {
@@ -1231,107 +1227,107 @@ img.rounded-circle {
     color: white;
 }
 .review-label {
-  color: #ffd43b; /* amarillo más intenso */
-  font-size: 0.95rem;
-  letter-spacing: 0.3px;
+    color: #ffd43b; /* amarillo más intenso */
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
 }
 /* BLOBS DE FONDO NEÓN DIFUSOS */
 .blob {
-  position: fixed; /* cambio importante: fixed para que siempre esté visible en viewport */
-  border-radius: 50%;
-  opacity: 0.30;
-  filter: blur(160px);
-  z-index: 0;
-  pointer-events: none;
+    position: fixed; /* cambio importante: fixed para que siempre esté visible en viewport */
+    border-radius: 50%;
+    opacity: 0.3;
+    filter: blur(160px);
+    z-index: 0;
+    pointer-events: none;
 }
 
 /* Distintos blobs */
 .blob1 {
-  width: 400px;
-  height: 400px;
-  background: #ff2592; /* violeta */
-  top: 10%;
-  left: -10%;
+    width: 400px;
+    height: 400px;
+    background: #ff2592; /* violeta */
+    top: 10%;
+    left: -10%;
 }
 
 .blob2 {
-  width: 350px;
-  height: 350px;
-  background: #ff2929; /* celeste */
-  top: 30%;
-  left: 95%;
+    width: 350px;
+    height: 350px;
+    background: #ff2929; /* celeste */
+    top: 30%;
+    left: 95%;
 }
 
 .blob3 {
-  width: 600px;
-  height: 600px;
-  background: #002fff; /* rosa */
-  top: 90%;
-  left: 34%;
+    width: 600px;
+    height: 600px;
+    background: #002fff; /* rosa */
+    top: 90%;
+    left: 34%;
 }
 
 .blob4 {
-  width: 300px;
-  height: 300px;
-  background: #29cdff; /* rosa */
-  top: 10%;
-  left: 40%;
-}
-@media (max-width: 576px) {
-  .espaciadoMobileOk {
-    margin-left: 5rem;
-  }
-}
-@media (max-width: 576px) {
-  .blob1 {
     width: 300px;
     height: 300px;
-    top: 5%;
-    left: -20%;
-  }
+    background: #29cdff; /* rosa */
+    top: 10%;
+    left: 40%;
+}
+@media (max-width: 576px) {
+    .espaciadoMobileOk {
+        margin-left: 5rem;
+    }
+}
+@media (max-width: 576px) {
+    .blob1 {
+        width: 300px;
+        height: 300px;
+        top: 5%;
+        left: -20%;
+    }
 
-  .blob2 {
-    width: 250px;
-    height: 250px;
-    top: 20%;
-    left: 60%;
-  }
+    .blob2 {
+        width: 250px;
+        height: 250px;
+        top: 20%;
+        left: 60%;
+    }
 
-  .blob3 {
-    width: 400px;
-    height: 400px;
-    top: 80%;
-    left: 10%;
-  }
+    .blob3 {
+        width: 400px;
+        height: 400px;
+        top: 80%;
+        left: 10%;
+    }
 
-  .blob4 {
-    width: 200px;
-    height: 200px;
-    top: 50%;
-    left: 30%;
-  }
+    .blob4 {
+        width: 200px;
+        height: 200px;
+        top: 50%;
+        left: 30%;
+    }
 }
 
-
 .reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .reveal.active {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Asegura que el contenido quede encima */
-body, html {
-  position: relative;
-  z-index: 1;
+body,
+html {
+    position: relative;
+    z-index: 1;
 }
-section, .container, .section-spacing {
-  position: relative;
-  z-index: 1;
+section,
+.container,
+.section-spacing {
+    position: relative;
+    z-index: 1;
 }
-
-
