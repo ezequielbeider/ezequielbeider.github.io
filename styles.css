@@ -585,6 +585,7 @@ img.rounded-circle {
 }
 
 .spoiler-scroll {
+    padding-top: 5%;
     scrollbar-width: thin;
     /* Firefox */
     scrollbar-color: var(--primary-color) transparent;
@@ -600,6 +601,7 @@ img.rounded-circle {
 
 /* Fondo y tamaño de la imagen */
 .spoiler-img-wrapper {
+    position: relative;
     height: 260px;
     padding: 24px;
     border-radius: 24px;
@@ -610,11 +612,19 @@ img.rounded-circle {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: visible;
 }
 
 .spoiler-img-wrapper img {
-    max-height: 410px;
+    max-height: 1000px;
     object-fit: contain;
+    position: absolute;
+    bottom: 2%;
+    z-index: 999;
+}
+.spoiler-img-wrapper img:hover{
+    transform: translateY(-10px);
+    transition: all 1s ease;
 }
 
 /* Títulos alineados a la izquierda */
