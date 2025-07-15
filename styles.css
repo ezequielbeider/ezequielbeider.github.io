@@ -619,7 +619,7 @@ img.rounded-circle {
     max-height: 1000px;
     object-fit: contain;
     position: absolute;
-    bottom: 2%;
+    bottom: -7%;
     z-index: 999;
 }
 .spoiler-img-wrapper img:hover{
