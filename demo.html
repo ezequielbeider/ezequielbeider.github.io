@@ -67,7 +67,7 @@
                 </div>
             </section>
 
-            <section id="queIncluye" class="section-spacing container text-center py-5">
+            <section id="queIncluye" class="section-spacing container text-center py-5 reveal">
                 <div class="miniespaciado">
                     <h2 class="h2-custom mb-5 fw-bold">¿Qué incluye?</h2>
                 </div>
@@ -165,7 +165,7 @@
             <div class="blob blob3"></div>
             <div class="blob blob4"></div>
 
-                        <section id="testi" class="testimonios-section text-white">
+                        <section id="testi" class="testimonios-section text-white reveal">
               <div class="container">
                 <div class="text-center mb-5">
                   <h2 class="h2-customBlanco3">Lo que dicen los Tryhard</h2>
@@ -216,7 +216,7 @@
               </div>
             </section>
 
-            <section class="section-spacing container text-center py-5">
+            <section class="section-spacing container text-center py-5 reveal">
   <div class="miniespaciado">
     <h2 class="h2-custom mb-5 fw-bold">Beneficios exclusivos</h2>
     <p class="lead-custom mb-5">
@@ -270,7 +270,7 @@
 
 
             <!-- FAQ / Preguntas frecuentes -->
-                  <section id="preguntas" class="faq-section section-spacing container">
+                  <section id="preguntas" class="faq-section section-spacing container reveal">
                     <div class="text-center mb-5">
                       <h2 class="h2-custom fw-bold">Preguntas frecuentes</h2>
                       <p class="lead-custom">Todo lo que necesitás saber sobre el Plan Modo Tryhard</p>
@@ -421,5 +421,24 @@
                 navbar.classList.toggle("scrolled", window.scrollY > 50);
             });
         </script>
+
+        <script>
+  const reveals = document.querySelectorAll('.reveal');
+
+  function revealOnScroll() {
+    const windowHeight = window.innerHeight;
+    reveals.forEach(element => {
+      const elementTop = element.getBoundingClientRect().top;
+      if (elementTop < windowHeight - 100) {
+        element.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+</script>
+
+
     </body>
 </html>

@@ -85,7 +85,7 @@
 
         <!-- SECCIÓN G: Beneficios destacados en cards con íconos de Bootstrap -->
        
-        <section id="funciona" class="section-spacing container text-center py-5">
+        <section id="funciona" class="section-spacing container text-center py-5 reveal">
             <div class="miniespaciado">
             <h2 class="h2-custom mb-5 fw-bold">¿Cómo funciona?</h2>
             </div>
@@ -139,7 +139,7 @@
             <div class="blob blob4"></div>
       
 
-        <section class="section-spacing container">
+        <section class="section-spacing container reveal">
             <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between">
                 <!-- Texto a la izquierda -->
                 <div class=" text-center text-md-start mb-4 mb-md-0 col-lg-6">
@@ -195,7 +195,7 @@
         </section>
 
         <!-- STATS + REVIEWS ---------------------------------------------------->
-        <section class="stats-section text-white">
+        <section class="stats-section text-white reveal">
             <div class="container py-5">
                 <div class="row g-5 align-items-center justify-content-between">
                     <!-- Columna A: Texto principal + stats -->
@@ -253,7 +253,7 @@
         <!-- /STATS + REVIEWS --------------------------------------------------->
 
         <!-- SPOILER – Ítems de la caja ---------------------------------------->
-        <section class="spoiler-section">
+        <section class="spoiler-section reveal">
             <div class="container">
                 <!-- Título -->
                 <h2 class="text-center fw-bold mb-2">
@@ -346,7 +346,7 @@
         <!-- /SPOILER ----------------------------------------------------------->
 
         <!-- SECCIÓN Caja única + NFT -->
-        <section class="limited-box-section">
+        <section class="limited-box-section reveal">
             <div class="container">
                 <!-- Cuenta regresiva -->
                 <div class="countdown-bar d-flex justify-content-between align-items-center px-4 py-3">
@@ -399,14 +399,14 @@
         </section>
 
         <!-- PRICING: Tabla de precios o planes -->
-        <section id="compara" class="section-spacing container3 text-center pricing-section">
+        <section id="compara" class="section-spacing container3 text-center pricing-section reveal">
             <h2 class="h2-customBlanco">Compará planes</h2>
             <div class="espaciadoPlanes">
                 <div class="row mt-5 gy-4">
                     <!-- Plan Origin Story -->
                     <div class="col-md-4">
                         <div class="pricing-card plan-origin">
-                            <img src="media/deadpool.png" style="width: 9rem;" alt="Deadpool" class="plan-character" />
+                            <img src="media/deadpool.png" style="width: 11rem;" alt="Deadpool" class="plan-character" />
                             <div class="card-header-content">
                                 <h5>Plan Origin Story</h5>
                                 <p style="color: rgb(238, 238, 238);">
@@ -470,7 +470,7 @@
                     <!-- Plan Multiverso -->
                     <div class="col-md-4">
                         <div class="pricing-card plan-multiverso">
-                            <img src="media/hulk.png" style="width: 9rem;" alt="Hulk" class="plan-character" />
+                            <img src="media/hulk.png" style="width: 10rem;" alt="Hulk" class="plan-character" />
                             <div class="card-header-content">
                                 <h5>Plan Multiverso</h5>
                                  <p style="color: rgb(238, 238, 238);">
@@ -508,13 +508,13 @@
         <!-- ======================================================
      GEEKSWAP – Imagen a la izquierda (ya armada) + Texto a la derecha
 ====================================================== -->
-        <section id="GeekSwap" class="py-5 geekswap-section">
+        <section id="GeekSwap" class="py-5 geekswap-section reveal">
             <div class="container">
                 <div class="row align-items-center">
                     <!-- Columna izquierda: imagen entera ya armada -->
                     <div class="col-12 col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
                         <div class="espaciado2">
-                            <img src="media/celular.png" alt="Mockup GeekSwap" class="img-fluid" />
+                            <img src="media/celular.png" alt="Mockup GeekSwap" class="img-fluid espaciadoMobileOk" />
                         </div>
                     </div>
 
@@ -548,7 +548,7 @@
             </div>
         </section>
 
-        <section id="nosotros" class="clientes-section text-center">
+        <section id="nosotros" class="clientes-section text-center reveal">
             <div class="container">
                 <!-- Título y subtítulo -->
                 <h2 class="clientes-title">
@@ -628,7 +628,7 @@
        
 
         <!-- CONTACT FORM: Formulario de contacto -->
-        <section class="section-spacing container text-center">
+        <section class="section-spacing container text-center reveal">
             <h2 class="h2-custom">¿Te quedaron dudas?</h2>
             <p class="p-custom" style="margin-top: -3rem;">¡Estamos para ayudarte!</p>
             <div class="row justify-content-center">
@@ -735,5 +735,23 @@
     navbar.classList.toggle("scrolled", window.scrollY > 50);
   });
 </script>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+
+  function revealOnScroll() {
+    const windowHeight = window.innerHeight;
+    reveals.forEach(element => {
+      const elementTop = element.getBoundingClientRect().top;
+      if (elementTop < windowHeight - 100) {
+        element.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+</script>
+
     </body>
 </html>

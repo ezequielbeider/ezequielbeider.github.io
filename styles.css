@@ -818,7 +818,7 @@ img.rounded-circle {
 /* Personajes */
 .plan-character {
     position: absolute;
-    top: -240px;
+    top: -250px;
     left: 50%;
     transform: translateX(-50%);
     width: 80px;
@@ -827,13 +827,13 @@ img.rounded-circle {
 
 /* BORDES Y BOTONES POR PLAN */
 .plan-origin {
-    border-color: #3b82f6;
+    border-color: #99c0ff;
 }
 .plan-tryhard {
     border-color: #facc15;
 }
 .plan-multiverso {
-    border-color: #3b82f6;
+    border-color: #99c0ff;
 }
 
 .btn-origin {
@@ -861,6 +861,7 @@ img.rounded-circle {
 @media (max-width: 767px) {
     .pricing-card {
         text-align: center;
+        margin-top: 3rem;
     }
     .pricing-card ul li {
         flex-direction: column;
@@ -1058,9 +1059,9 @@ img.rounded-circle {
 .hero-tryhard {
   min-height: 100vh;
   padding: 100px 0;
-  background-image: url("media/fondo2.jpg");
+  background-image: url("media/lastfondo2.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
   color: white;
   position: relative;
@@ -1103,10 +1104,12 @@ img.rounded-circle {
 /* Responsive tweaks */
 @media (max-width: 768px) {
   .hero-tryhard h1 {
+    
     font-size: 2.2rem;
   }
 
   .hero-tryhard {
+    background-position: left;
     padding: 60px 20px;
     text-align: center;
   }
@@ -1274,6 +1277,52 @@ img.rounded-circle {
   top: 10%;
   left: 40%;
 }
+@media (max-width: 576px) {
+  .espaciadoMobileOk {
+    margin-left: 5rem;
+  }
+}
+@media (max-width: 576px) {
+  .blob1 {
+    width: 300px;
+    height: 300px;
+    top: 5%;
+    left: -20%;
+  }
+
+  .blob2 {
+    width: 250px;
+    height: 250px;
+    top: 20%;
+    left: 60%;
+  }
+
+  .blob3 {
+    width: 400px;
+    height: 400px;
+    top: 80%;
+    left: 10%;
+  }
+
+  .blob4 {
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 30%;
+  }
+}
+
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* Asegura que el contenido quede encima */
 body, html {
@@ -1284,3 +1333,5 @@ section, .container, .section-spacing {
   position: relative;
   z-index: 1;
 }
+
+
